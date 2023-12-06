@@ -1,0 +1,273 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+.wrapper {
+    margin-left: 165px;
+    width: 1474px;
+}
+
+/*
+------------------------------------------------------------------------------------
+*/
+
+.first-section {
+    margin-top: 105px;
+}
+
+.first__title{
+    font-size: 38px;
+}
+
+.first__list {
+    display: flex;
+    gap: 43px;
+    margin-top: 39px;
+}
+
+.first__list-item {
+    background-color: black;
+    height: 239px;
+    width: 100%;
+}
+
+/*
+------------------------------------------------------------------------------------
+*/
+
+.second-section {
+    margin-top: 98px;
+}
+
+.second__title{
+    font-size: 37px;
+}
+
+.second__list{
+    margin-top: 36px;
+    display: grid;
+    gap: 27px;
+    grid-template-columns:  738px auto
+}
+
+.second__list-item{
+    background-color: black;
+    height: 239px;
+    width: 100%;
+}
+
+/*
+------------------------------------------------------------------------------------
+*/
+
+.third-section {
+    margin-top: 145px;
+    margin-left: 23px;
+}
+
+.third__title{
+    font-size: 37px;
+}
+
+.third__list{
+    margin-top: 96px;
+    display: grid;
+    grid-column-gap: 29px;
+    grid-row-gap: 36px;
+    height: 100%;
+    grid-template:
+        "a c c"
+        "b c c"
+        "d d e";
+    grid-template-rows: 262px 216px 152px;
+    grid-template-columns: 722px 313px 358px;
+}
+
+.third__list-item{
+    background-color: black;
+    width: 100%;
+}
+
+
+.third__list-item--a {
+    grid-area: a;
+}
+.third__list-item--b {
+    grid-area: b;
+}
+.third__list-item--c {
+    grid-area: c;
+}
+.third__list-item--d {
+    grid-area: d;
+}
+.third__list-item--e {
+    grid-area: e;
+}
+
+
+/*
+------------------------------------------------------------------------------------
+*/
+
+.fourth-section{
+    margin-top: 46px;
+}
+
+.fourth__title{
+    font-size: 37px;
+}
+
+.fourth__list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    padding: 46px;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.fourth__left{
+    display: flex;
+    gap: 47px;
+}
+
+.fourth__left-img{
+    height: 159px;
+    width: 159px;
+}
+
+.fourth__left-swap{
+    margin-top: 28px;
+}
+
+.fourth__left-title{
+    font-weight: 600;
+    font-size: 36px;
+}
+.fourth__left-text{
+    margin-top: 10px;
+    font-size: 34px;
+}
+
+.fourth__right-btn{
+    color: white;
+    background-color: blue;
+    padding: 17px 49px;
+    font-size: 44px;
+}
+
+/*
+------------------------------------------------------------------------------------
+*/
+
+
+.fifth-section {
+margin-top: 122px;
+}
+
+.fifth__title{
+    font-size: 37px;
+}
+
+.fifth__bloks{
+    margin-top: 89px;
+    display: flex;
+    gap: 32px;
+}
+
+
+.fifth__blok{
+    position: relative;
+    background-color: aquamarine;
+    width: 49%;
+    height: 697px;
+}
+
+.fifth__blok-img{
+    height: 270px;
+    width: 100%;
+}
+
+.fifth__block-list{
+    padding-left: 50px;
+    padding-top: 29px;
+}
+
+.fifth__block-title{
+    font-size: 36px;
+}
+
+.fifth__block-text{
+    font-size: 32px;
+    margin-top: 46px;
+    max-width: 460px;
+    line-height: 100%;
+    -webkit-line-clamp: 3; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+}
+
+.fifth__block-btn{
+    position: absolute;
+    left: 44px;
+    bottom: 37px;
+    color: white;
+    background-color: blue;
+    padding: 15px 49px;
+    font-size: 46px;
+    width: 129px;
+}
+
+@media (max-width: 991px) {
+.first__list {
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr)
+}
+.third__list{
+    grid-template:
+    "a b"
+    "c d"
+    "c e";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 702px;
+}
+}
+
+@media (max-width: 768px) {
+    .first__list {
+        display: grid;
+        grid-template-columns:  repeat(1, 1fr)
+    }
+    .second__list{
+        grid-template-columns:  repeat(1, 1fr)
+    }
+    .third__list{
+        grid-template:
+        "a"
+        "b"
+        "c"
+        "c"
+        "d"
+        "e";
+    }
+    .fourth__list{
+        display: block;
+
+    }
+    .fourth__right{
+        margin-top: 60px;
+    }
+    .fifth__bloks{
+        flex-direction: column;
+    }
+    }
