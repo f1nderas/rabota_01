@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <section class="first-section">
-            <h2 class="first__title">Загаловок страницы (блок - 3 блока в ряд)</h2>
+    <div class="container">
+        <div class="first-section section">
+            <h2 class="first__title title">Загаловок страницы (блок - 3 блока в ряд)</h2>
             <div class="first__list">
                 <div class="first__list-item"></div>
                 <div class="first__list-item"></div>
                 <div class="first__list-item"></div>
             </div>
-        </section>
-        <section class="second-section">
-            <h2 class="second__title">Несколько одинаковых блоков</h2>
+        </div>
+        <div class="second-section section">
+            <h2 class="second__title title">Несколько одинаковых блоков</h2>
             <div class="second__list">
                 <div class="second__list-item"></div>
                 <div class="second__list-item"></div>
                 <div class="second__list-item"></div>
             </div>
-        </section>
-        <section class="third-section">
-            <h2 class="third__title">Группа блоков</h2>
+        </div>
+        <div class="third-section section">
+            <h2 class="third__title title">Группа блоков</h2>
             <div class="third__list">
                 <div class="third__list-item third__list-item--a"></div>
                 <div class="third__list-item third__list-item--b"></div>
@@ -33,44 +33,55 @@
                 <div class="third__list-item third__list-item--d"></div>
                 <div class="third__list-item third__list-item--e"></div>
             </div>
-        </section>
-        <section class="fourth-section">
-            <div class="fourth__title">Блок с контентом</div>
-            <div class="fourth__list">
-                <div class="fourth__left">
-                    <img  class="fourth__left-img" src="logo.png" alt="">
-                    <div class="fourth__left-swap">
-                        <div class="fourth__left-title">Загаловок</div>
-                     <div class="fourth__left-text">описание</div>
-                    </div>
-
+        </div>
+        <div class="fourth-section section">
+            <div class="fourth__title title">Блок с контентом</div>
+            <div class="fourth__card">
+                <div class="fourth__images">
+                    <img  class="fourth__images-img" src="logo.png" alt="">
                 </div>
-                <div class="fourth__right">
-                    <button class="fourth__right-btn">кнопка</button>
+                <div class="fourth__text">
+                    <div class="fourth__text-title">
+                        Загаловок
+                    </div>
+                    <div class="fourth__text-text">
+                        описание
+                    </div>
+                </div>
+                <div class="fourth__btn">
+                    <a class="fourth__btn-link btn" href="#">кнопка</a>
                 </div>
             </div>
-        </section>
-        <section class="fifth-section">
-            <div class="fifth__title">Блок с контентом 2</div>
-            <div class="fifth__bloks">
-                <div class="fifth__blok">
-                    <img class="fifth__blok-img" src="zakat.jpg" alt="" >
-                    <div class="fifth__block-list">
-                        <div class="fifth__block-title">Загаловок</div>
-                        <div class="fifth__block-text">Текстк 1 строка</div>
-                        <div class="fifth__block-btn">кнопка</div>
+        </div>
+        <div class="fifth-section section">
+            <div class="fifth__title title">Блок с контентом 2</div>
+            <div class="fifth__list">
+                <div class="fifth-block">
+                    <div class="fifth-block__images">
+                        <img class="fifth-block__images-img" src="zakat.jpg" alt="" >
+                    </div>
+                    <div class="fifth-block__section">
+                        <div class="fifth-block__section-title">Загаловок</div>
+                        <div class="fifth-block__section-text">Текстк 1 строка</div>
+                        <div class="fifth-block__section-btn">
+                            <a class="fifth-block__section-link btn" href="#">кнопка</a>
+                        </div>
                     </div>
                 </div>
-                <div class="fifth__blok">
-                    <img class="fifth__blok-img" src="zakat.jpg" alt="" >
-                    <div class="fifth__block-list">
-                        <div class="fifth__block-title">Загаловок</div>
-                        <div class="fifth__block-text">Текст 3 строки Если текста больше 3 строк, то текст обрезатеся и в конце стоит бла бла бла бла бла бла</div>
-                        <div class="fifth__block-btn">кнопка</div>
+                <div class="fifth-block">
+                    <div class="fifth-block__images">
+                        <img class="fifth-block__images-img" src="zakat.jpg" alt="" >
+                    </div>
+                    <div class="fifth-block__section">
+                        <div class="fifth-block__section-title">Загаловок</div>
+                        <div class="fifth-block__section-text">Текст 3 строки Если текста больше 3 строк, то текст обрезатеся и в конце стоит бла бла бла бла бла бла</div>
+                        <div class="fifth-block__section-btn">
+                            <a class="fifth-block__section-link btn" href="#">кнопка</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 
 
