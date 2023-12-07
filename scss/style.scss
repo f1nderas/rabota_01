@@ -34,11 +34,9 @@
     font-size: 40px;
 }
 
+
 $gray: #333;
 
-/*
-------------------------------------------------------------------------------------
-*/
 
 .first{
     &__list {
@@ -58,16 +56,13 @@ $gray: #333;
             width: calc((100% - 20px)/2)
         } 
     }   
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         &__list-item {
             width: 100%
         } 
     }  
 }
 
-/*
-------------------------------------------------------------------------------------
-*/
 
 .second{
     &__list{
@@ -80,22 +75,18 @@ $gray: #333;
         height: 239px;
         width: calc((100% - 20px)/2)
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         &__list-item {
             width: 100%
         } 
     }  
 }
 
-/*
-------------------------------------------------------------------------------------
-*/
 
 .third{
     &__list{
         display: grid;
         gap: 30px;
-        height: 600px;
         grid-template:
             "a c c"
             "b c c"
@@ -104,6 +95,7 @@ $gray: #333;
         grid-template-columns: 40% 30% 1fr;
     }
     &__list-item{
+        min-height: 250px;
         background-color: $gray;
         &--a{
             grid-area: a;
@@ -131,7 +123,7 @@ $gray: #333;
             grid-template-columns: repeat(2, 1fr);
         }
     }   
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         &__list{
             grid-template:
             "a"
@@ -145,13 +137,10 @@ $gray: #333;
 }
 
 
-/*
-------------------------------------------------------------------------------------
-*/
-
 .fourth{
     &__card{
         display: flex;
+        gap: 20px;
         padding: 46px;
         align-items: center;
         background-color: aquamarine;
@@ -164,9 +153,12 @@ $gray: #333;
         height: 100%;
         width: 100%;
         object-fit: cover;
+        border-radius: 50%;
+        flex: none;
+        object-position: center;
     }
     &__text{
-        margin-left: 30px;
+        flex: 1;
     }
     &__text-title{
         font-weight: 600;
@@ -179,21 +171,26 @@ $gray: #333;
     &__btn{
         margin-left: auto;
     }
+    &__btn-link{
+        display: inline-block;
+    }
     @media (max-width: 991px) {
         &__card{
             flex-wrap: wrap;
         }
         &__images{
-            margin-bottom: 40px;
         }
         &__text{
-            width: 403px;
+        
         }
         &__btn{
-            margin-left: 0;
+           
         }
     }   
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
+        &__card {
+            display: block;
+        }
         &__text-text {
             margin-bottom: 20px;
         }
@@ -214,21 +211,25 @@ $gray: #333;
         gap: 30px;
     }
     &-block{
+        display: flex;
+        flex-direction: column;
         background-color: aquamarine;
         width: calc((100% - 30px)/2);
     }
     &-block__images{
-        width: 100%;
         height: 270px;
     }
     &-block__images-img{
         object-fit: cover;
         width: 100%;
         height: 100%;
+        flex: none;
+        object-position: center;
     }
     &-block__section{
-        padding: 0 40px;
-        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
     }
     &-block__section-title{
         font-size: 36px;
@@ -245,14 +246,11 @@ $gray: #333;
     }
     &-block__section-btn{
         margin-top: auto;
-        margin-bottom: 30px;
     }
     &-block__section-link{
-        padding: 0 40px;
-        width: 219px;
-        
+        display: inline-block;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767pxs) {
         &__list{
             flex-wrap: wrap;
         }
@@ -263,3 +261,13 @@ $gray: #333;
 }
 
 
+@media (max-width: 767px) {
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .section {
+        padding: 60px 0;
+    }
+}
