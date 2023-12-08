@@ -34,6 +34,14 @@
   font-size: 40px;
 }
 
+.h3 {
+  font-size: 36px;
+}
+
+.p {
+  font-size: 32px;
+}
+
 .first__list {
   display: flex;
   gap: 20px;
@@ -136,11 +144,7 @@
 }
 .fourth__text-title {
   font-weight: 600;
-  font-size: 36px;
   margin-bottom: 15px;
-}
-.fourth__text-text {
-  font-size: 34px;
 }
 .fourth__btn {
   margin-left: auto;
@@ -155,7 +159,8 @@
 }
 @media (max-width: 767px) {
   .fourth__card {
-    display: block;
+    flex-direction: column;
+    padding: 27px;
   }
   .fourth__text-text {
     margin-bottom: 20px;
@@ -164,11 +169,11 @@
     flex-wrap: wrap;
     width: 100%;
   }
+  .fourth__btn {
+    margin: 0;
+  }
 }
 
-/*
-------------------------------------------------------------------------------------
-*/
 .fifth__list {
   display: flex;
   gap: 30px;
@@ -193,15 +198,15 @@
   display: flex;
   flex-direction: column;
   padding: 40px;
+  flex: 1;
 }
 .fifth-block__section-title {
-  font-size: 36px;
   margin-bottom: 36px;
 }
 .fifth-block__section-text {
-  font-size: 32px;
   max-width: 460px;
   line-height: 100%;
+  margin-bottom: 20px;
   -webkit-line-clamp: 3;
   /* Число отображаемых строк */
   display: -webkit-box;
@@ -217,22 +222,44 @@
 .fifth-block__section-link {
   display: inline-block;
 }
-@media (max-width: 767pxs) {
+@media (max-width: 767px) {
   .fifth__list {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .fifth-block {
     width: 100%;
+  }
+  .fifth-block__section {
+    padding: 27px;
+  }
+  .fifth-block__section-text {
+    margin-bottom: 25px;
+  }
+  .fifth-block__section-text {
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 767px) {
   .title {
-    font-size: 28px;
+    font-size: 25px;
     margin-bottom: 30px;
   }
 
   .section {
     padding: 60px 0;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 23px;
+  }
+
+  .h3 {
+    font-size: 25px;
+  }
+
+  .p {
+    font-size: 22px;
   }
 }
