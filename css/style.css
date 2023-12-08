@@ -21,10 +21,21 @@
 .section {
   padding: 100px 0;
 }
+@media (max-width: 767px) {
+  .section {
+    padding: 60px 0;
+  }
+}
 
 .title {
   font-size: 38px;
   margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .title {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
 }
 
 .btn {
@@ -33,13 +44,34 @@
   padding: 17px 49px;
   font-size: 40px;
 }
+@media (max-width: 767px) {
+  .btn {
+    padding: 8px 20px;
+    font-size: 23px;
+  }
+}
 
 .h3 {
   font-size: 36px;
 }
+@media (max-width: 767px) {
+  .h3 {
+    font-size: 25px;
+  }
+}
 
 .p {
   font-size: 32px;
+}
+@media (max-width: 767px) {
+  .p {
+    font-size: 22px;
+  }
+}
+
+.card1 {
+  background-color: #333;
+  min-height: 239px;
 }
 
 .first__list {
@@ -47,8 +79,6 @@
   gap: 20px;
 }
 .first__list-item {
-  background-color: #333;
-  height: 239px;
   width: calc((100% - 40px)/3);
 }
 @media (max-width: 991px) {
@@ -71,8 +101,6 @@
   gap: 20px;
 }
 .second__list-item {
-  background-color: #333;
-  height: 239px;
   width: calc((100% - 20px)/2);
 }
 @media (max-width: 767px) {
@@ -130,13 +158,14 @@
 .fourth__images {
   height: 100px;
   width: 100px;
+  flex: none;
+  border-radius: 100%;
+  overflow: hidden;
 }
 .fourth__images-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 50%;
-  flex: none;
   object-position: center;
 }
 .fourth__text {
@@ -147,14 +176,19 @@
   margin-bottom: 15px;
 }
 .fourth__btn {
-  margin-left: auto;
-}
-.fourth__btn-link {
   display: inline-block;
+  margin-left: auto;
 }
 @media (max-width: 991px) {
   .fourth__card {
     flex-wrap: wrap;
+  }
+  .fourth__text {
+    flex: none;
+    width: calc(100% - 100px - 20px);
+  }
+  .fourth__btn {
+    margin: 0;
   }
 }
 @media (max-width: 767px) {
@@ -176,13 +210,12 @@
 
 .fifth__list {
   display: flex;
-  gap: 30px;
 }
 .fifth-block {
   display: flex;
   flex-direction: column;
   background-color: aquamarine;
-  width: calc((100% - 30px)/2);
+  height: 100%;
 }
 .fifth-block__images {
   height: 270px;
@@ -225,6 +258,7 @@
 @media (max-width: 767px) {
   .fifth__list {
     flex-direction: column;
+    gap: 30px;
   }
   .fifth-block {
     width: 100%;
@@ -240,26 +274,8 @@
   }
 }
 
-@media (max-width: 767px) {
-  .title {
-    font-size: 25px;
-    margin-bottom: 30px;
-  }
-
-  .section {
-    padding: 60px 0;
-  }
-
-  .btn {
-    padding: 8px 20px;
-    font-size: 23px;
-  }
-
-  .h3 {
-    font-size: 25px;
-  }
-
-  .p {
-    font-size: 22px;
-  }
+.first,
+.second {
+  gap: 20px 0;
+  width: 100%;
 }

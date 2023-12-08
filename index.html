@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,22 +12,22 @@
         <div class="first-section section">
             <h2 class="first__title title">Загаловок страницы (блок - 3 блока в ряд)</h2>
             <div class="first__list">
-                <div class="first__list-item"></div>
-                <div class="first__list-item"></div>
-                <div class="first__list-item"></div>
+                <div class="first__list-item card1"></div>
+                <div class="first__list-item card1"></div>
+                <div class="first__list-item card1"></div>
             </div>
         </div>
         <div class="second-section section">
             <h2 class="second__title title">Несколько одинаковых блоков</h2>
             <div class="second__list">
-                <div class="second__list-item"></div>
-                <div class="second__list-item"></div>
-                <div class="second__list-item"></div>
+                <div class="second__list-item card1"></div>
+                <div class="second__list-item card1"></div>
+                <div class="second__list-item card1"></div>
             </div>
         </div>
         <div class="third-section section">
             <h2 class="third__title title">Группа блоков</h2>
-            <div class="third__list">
+            <div class="third__list ">
                 <div class="third__list-item third__list-item--a"></div>
                 <div class="third__list-item third__list-item--b"></div>
                 <div class="third__list-item third__list-item--c"></div>
@@ -44,9 +45,9 @@
                     <h3 class="fourth__text-title h3">
                         Загаловок
                     </h3>
-                    <p class="fourth__text-text p">
+                    <div class="fourth__text-text p">
                         описание
-                    </p>
+                    </div>
                 </div>
                 <div class="fourth__btn">
                     <a class="fourth__btn-link btn" href="#">кнопка</a>
@@ -55,35 +56,67 @@
         </div>
         <div class="fifth-section section">
             <div class="fifth__title title">Блок с контентом 2</div>
-            <div class="fifth__list">
-                <div class="fifth-block">
-                    <div class="fifth-block__images">
-                        <img class="fifth-block__images-img" src="zakat.jpg" alt="" >
-                    </div>
-                    <div class="fifth-block__section">
-                        <h3 class="fifth-block__section-title h3">Загаловок</h3>
-                        <p class="fifth-block__section-text p">Текстк 1 строка</p>
-                        <div class="fifth-block__section-btn">
-                            <a class="fifth-block__section-link btn" href="#">кнопка</a>
+            <div class="fifth__list row">
+                <div class="col-12 col-md-6">
+                    <div class="fifth-block">
+                        <div class="fifth-block__images">
+                            <img class="fifth-block__images-img" src="zakat.jpg" alt="" >
+                        </div>
+                        <div class="fifth-block__section">
+                            <h3 class="fifth-block__section-title h3">Загаловок</h3>
+                            <div class="fifth-block__section-text p">Текстк 1 строка</div>
+                            <div class="fifth-block__section-btn">
+                                <a class="fifth-block__section-link btn" href="#">кнопка</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="fifth-block">
-                    <div class="fifth-block__images">
-                        <img class="fifth-block__images-img" src="zakat.jpg" alt="" >
-                    </div>
-                    <div class="fifth-block__section">
-                        <h3 class="fifth-block__section-title h3">Загаловок</h3>
-                        <p class="fifth-block__section-text p">Текст 3 строки Если текста больше 3 строк, то текст обрезатеся и в конце стоит бла бла бла бла бла бла</p>
-                        <div class="fifth-block__section-btn">
-                            <a class="fifth-block__section-link btn" href="#">кнопка</a>
+                <div class="col-12 col-md-6">
+                    <div class="fifth-block">
+                        <div class="fifth-block__images">
+                            <img class="fifth-block__images-img" src="zakat.jpg" alt="" >
+                        </div>
+                        <div class="fifth-block__section">
+                            <h3 class="fifth-block__section-title h3">Загаловок</h3>
+                            <div class="fifth-block__section-text p">Текст 3 строки Если текста больше 3 строк, то текст обрезатеся и в конце стоит бла бла бла бла бла бла</div>
+                            <div class="fifth-block__section-btn">
+                                <a class="fifth-block__section-link btn" href="#">кнопка</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="section">
+            <h2 class="title">Загаловок страницы (блок - 3 блока в ряд)</h2>
+            <div class="first row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card1"></div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card1"></div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="title">Несколько одинаковых блоков</h2>
+            <div class="second row">
+                <div class="col-12 col-md-6">
+                    <div class="card1"></div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card1"></div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card1"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

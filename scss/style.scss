@@ -20,11 +20,18 @@
 
 .section {
     padding: 100px 0;
+    @media (max-width: 767px) {
+        padding: 60px 0;
+    }
 }
 
 .title {
     font-size: 38px;
     margin-bottom: 50px;
+    @media (max-width: 767px) {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
 }
 
 .btn {
@@ -32,25 +39,36 @@
     background-color: blue;
     padding: 17px 49px;
     font-size: 40px;
+    @media (max-width: 767px) {
+        padding: 8px 20px;
+        font-size: 23px;
+    }
 }
 .h3 {
     font-size: 36px;
-
+    @media (max-width: 767px) {
+        font-size: 25px;
+    }
 }
 .p {
     font-size: 32px;
+    @media (max-width: 767px) {
+        font-size: 22px;
+    }
 }
 
-
 $gray: #333;
+
+.card1{
+    background-color: $gray;
+    min-height: 239px;
+}
 
 
 .first__list{
     display: flex;
     gap: 20px;
     &-item {
-        background-color: $gray;
-        height: 239px;
         width: calc((100% - 40px)/3)
     } 
     @media (max-width: 991px) {
@@ -72,8 +90,6 @@ $gray: #333;
     flex-wrap: wrap;
     gap: 20px; 
     &-item{
-        background-color: $gray;
-        height: 239px;
         width: calc((100% - 20px)/2)
     }
     @media (max-width: 767px) {
@@ -143,13 +159,14 @@ $gray: #333;
     &__images{
         height: 100px;
         width: 100px;
+        flex: none;
+        border-radius: 100%;
+        overflow: hidden;
     }
     &__images-img{
         height: 100%;
         width: 100%;
         object-fit: cover;
-        border-radius: 50%;
-        flex: none;
         object-position: center;
     }
     &__text{
@@ -160,17 +177,19 @@ $gray: #333;
         margin-bottom: 15px;
     }
     &__btn{
-        margin-left: auto;
-    }
-    &__btn-link{
         display: inline-block;
+        margin-left: auto;
     }
     @media (max-width: 991px) {
         &__card{
             flex-wrap: wrap;
         }
+        &__text{
+            flex: none;
+            width: calc(100% - 100px - 20px);
+        }
         &__btn{
-            // width: 100%;
+            margin: 0;
         }
     }   
     @media (max-width: 767px) {
@@ -195,13 +214,15 @@ $gray: #333;
 .fifth{
     &__list{
         display: flex;
-        gap: 30px;
+        // gap: 30px;
     }
     &-block{
         display: flex;
         flex-direction: column;
         background-color: aquamarine;
-        width: calc((100% - 30px)/2);
+        // width: calc((100% - 30px)/2);
+        // width: 100%;
+        height: 100%;
         &__images{
             height: 270px;
         }
@@ -240,7 +261,8 @@ $gray: #333;
 
     @media (max-width: 767px) {
         &__list{
-            flex-direction: column
+            flex-direction: column;
+            gap: 30px;
         }
         &-block{
             width: 100%;
@@ -258,25 +280,9 @@ $gray: #333;
 }
 
 
-@media (max-width: 767px) {
 
-    .title {
-        font-size: 25px;
-        margin-bottom: 30px;
-    }
-    .section {
-        padding: 60px 0;
-    }
-    .btn {
-        padding: 8px 20px;
-        font-size: 23px;
-    }
-    .h3 {
-        font-size: 25px;
-    }
-    .p {
-        font-size: 22px;
-    }
-
-    
+.first,
+.second{
+    gap: 20px 0;
+    width: 100%;
 }
